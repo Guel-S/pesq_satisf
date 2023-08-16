@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Satisfação</title>
+</head>
+<body>
+    <h1>Pesquisa de Satisfação</h1>
+    <form action="./php_email" method="POST">
+        <p>Como você avalia nosso serviço?</p>
+        <input type="radio" name="avaliacao" value="excelente"> Excelente
+        <input type="radio" name="avaliacao" value="bom"> Bom
+        <input type="radio" name="avaliacao" value="regular"> Regular
+        <input type="radio" name="avaliacao" value="ruim"> Ruim
+
+        <p>Deixe um comentário:</p>
+        <textarea name="comentario" rows="4" cols="50"></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

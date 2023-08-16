@@ -1,0 +1,17 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $avaliacao = $_POST["avaliacao"];
+    $comentario = $_POST["comentario"];
+
+    $destino_email = "suporte@hsaorafael.com.br"; 
+
+    $assunto = "Nova pesquisa de satisfação";
+    $mensagem = "Avaliação: $avaliacao\nComentário: $comentario";
+
+    mail($destino_email, $assunto, $mensagem);
+
+    echo "Formulário enviado com sucesso!";
+} else {
+    echo "Ocorreu um erro ao processar o formulário.";
+}
+?>
