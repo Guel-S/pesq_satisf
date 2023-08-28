@@ -1,12 +1,106 @@
 body{
     margin: 0 auto;
     max-width: 1280px;
-    background-color: rgba(90,70,40,0.99);
+    background-color: rgba(99,85,50,1);
+}
+
+h1{
+    display: block;
+    text-align: center;
+    margin: 5px;
+    text-shadow: 10px;
+    
 }
 
 h2{
     text-align: center;
+    margin: 5px;
 }
+
+.msgAgradecimento{
+    text-align: center;
+    margin-top: 290px;
+    font-size: 64;
+}
+
+header{
+    height: 30px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    /*box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.1);*/
+    mix-blend-mode: multiply; 
+}
+
+.logo:hover{
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.05);
+
+}
+
+main{
+    padding: 25px;
+}
+
+.perguntaForm{
+    margin-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formulario{
+    display: flex;
+    width: 520px;
+    height: 240px;
+    box-shadow: 5px 5px 7px 10px rgba(0,0,0,0.3);
+    margin-left: 360px;
+    margin-top: 50px;
+    background-color: rgba(40,20,20,0.1);
+    
+}
+
+.opcao{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/*Deixar o botao com bordas arredondadas*/
+.botaoEnviar{
+    padding: 3px 10px;
+    border-radius: 10px; 
+    margin-left: 5px;
+}
+
+.areaTexto{
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+/*Largura do scrollbar*/
+textarea::-webkit-scrollbar{
+    width: 8px;
+}
+
+/*Area por onde percorre o scrollbar*/
+textarea::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset  0 0px 5px black;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background: rgba(99,85,50,1);
+    border-radius: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover{
+    background: black;
+}
+
 
 
 

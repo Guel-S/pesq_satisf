@@ -10,7 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     mail($destino_email, $assunto, $mensagem);
 
-    echo "Formulário enviado com sucesso!";
+    // Redirecionamento após o envio bem-sucedido
+    header("Location: pag_final.html");
+    exit; // Certifique-se de encerrar o script após o redirecionamento
 } else {
     echo "Ocorreu um erro ao processar o formulário.";
 }

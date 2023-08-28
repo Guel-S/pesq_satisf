@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./img/Logo_transparente.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa de Satisfação</title>
 </head>
+
 <body>
-    <h1>Homa Espaço Médico - Hospital São Rafael</h1>
-    <h2>Pesquisa de Satisfação</h2>
+    <header>
+        <img class="logo" src="./img/Logo_transparente.png" href="#">
+    </header>
+
+    <main>
+        <h1>Homa Espaço Médico - Hospital São Rafael</h1>
+        <h2>Pesquisa de Satisfação</h2>
+    <div class="formulario">
     <form action="./php_email" method="POST">
-        <p>Como você avalia nosso serviço?</p>
-        <input type="radio" name="avaliacao" value="excelente"> Excelente
-        <input type="radio" name="avaliacao" value="bom"> Bom
-        <input type="radio" name="avaliacao" value="regular"> Regular
-        <input type="radio" name="avaliacao" value="ruim"> Ruim
+        <p class="perguntaForm">Como você avalia nosso serviço?</p>
+        <input class="opcao" type="radio" name="avaliacao" value="excelente"> Excelente
+        <input class="opcao" type="radio" name="avaliacao" value="bom"> Bom
+        <input class="opcao" type="radio" name="avaliacao" value="regular"> Regular
+        <input class="opcao" type="radio" name="avaliacao" value="ruim"> Ruim
 
-        <p>Deixe um comentário:</p>
-        <textarea name="comentario" rows="4" cols="50"></textarea>
-
-        <input type="submit" value="Enviar">
+        <p class="perguntaForm">Deixe um comentário:</p>
+        <textarea class="areaTexto" style="resize:none" name="comentario" rows="4" cols="50"></textarea>
+        <br><br>
+        <input class="botaoEnviar" id="enviarBotao" type="submit" value="Enviar">
     </form>
+    </div>
+    </main>
+
+    <script src="./index.js"></script>
 </body>
 </html>
